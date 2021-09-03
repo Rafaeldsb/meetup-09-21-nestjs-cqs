@@ -2,6 +2,7 @@
 
 ## Definições
 CQS: Command Query Separation
+
 CQRS: Command Query Responsibility Segregation
 
 ## Exemplo
