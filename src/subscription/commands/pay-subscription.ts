@@ -43,6 +43,6 @@ export class PaySubscriptionHandler
 
     this.eventBus.publish(new SubscriptionPaidEvent(email, transaction));
 
-    return this.commandBus.execute(new CreateSubscriptionCommand(email));
+    await this.commandBus.execute(new CreateSubscriptionCommand(email));
   }
 }

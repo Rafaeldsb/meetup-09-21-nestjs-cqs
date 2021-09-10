@@ -35,6 +35,5 @@ export class CreateLeadHandler implements ICommandHandler<CreateLeadCommand> {
     const lead = await this.leadRepository.create(email);
 
     this.eventBus.publish(new LeadCreatedEvent(lead));
-    return lead;
   }
 }
